@@ -1,0 +1,71 @@
+.project-img {
+  height: 250px;       /* control grid image height */
+  object-fit: cover;   /* crop but keep aspect ratio */
+  border-radius: 8px;  /* optional, rounded corners */
+}
+.modal-img {
+  height: 400px;       /* you control this number */
+  width: auto;         /* stretch horizontally */
+  object-fit: cover;   /* crops sides/top but keeps aspect ratio */
+  border-radius: 8px;  /* optional, rounded corners */
+  overflow-y: auto;
+  margin: 0 auto;      /* center horizontally */
+}
+
+.hover-shadow:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 123, 255, 0.3);
+  transition: 0.3s;
+}
+#portfolioCarousel .card-img {
+  height: 600px;
+  object-fit: cover;
+}
+#portfolioCarousel .btn-outline-primary {
+  transition: all 0.3s ease;
+}
+
+#portfolioCarousel .btn-outline-primary:hover {
+  background-color: #0d6efd;
+  color: #fff;
+  transform: scale(1.05);
+}
+.carousel-img {
+  height: 400px;         /* Fixed height */
+  object-fit: cover;     /* Crop image nicely */
+  border-radius: 8px;    /* Optional rounded corners */
+}
+.carousel-inner {
+  min-height: 400px;  /* Matches image height */
+}
+
+ /* Card hover effects */
+.portfolio-card {
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 123, 255, 0.2);
+}
+.portfolio-card:hover {
+    border-color: rgba(0, 123, 255, 0.5);
+    box-shadow: 0 10px 20px rgba(0, 123, 255, 0.2);
+}
+/* Image zoom on hover */
+.portfolio-card-img {
+    overflow: hidden;
+    height: 200px;
+}
+.portfolio-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+.portfolio-card-img:hover img {
+    transform: scale(1.1);
+}
+/* Truncate text */
+.line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}

@@ -1,0 +1,74 @@
+.company-btn {
+    border-left: 3px solid transparent;
+    transition: border-color 0.3s;
+}
+
+.company-btn.active {
+    border-left-color: #0d6efd; /* Bootstrap primary blue */
+    font-weight: 600;
+    background-color: rgba(13, 110, 253, 0.1); /* subtle highlight */
+}
+.company-logo {
+    width: 80px;
+    height: 80px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    border-radius: 0.5rem; /* rounded corners */
+}
+
+.company-logo:hover {
+    transform: rotateY(15deg) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* Animate tab content fade-in */
+.tab-pane {
+    transition: opacity 0.6s ease, transform 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.tab-pane.show.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.job-card {
+    /* background: linear-gradient(135deg, #c6c9df, #a3abd8); */
+    background: transparent;
+    color: #fff;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease;
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+}
+
+.view-btn {
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s ease;
+}
+
+.view-btn::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #90c9ed, #2575fc);
+    top: 0;
+    left: -100%;
+    transition: all 0.4s ease;
+    z-index: 0;
+}
+
+.view-btn:hover::before {
+    left: 0;
+}
+
+.view-btn span {
+    position: relative;
+    z-index: 1;
+}

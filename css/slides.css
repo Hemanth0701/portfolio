@@ -1,0 +1,21 @@
+#portfolioCarousel .card-img {
+  height: 600px;
+  object-fit: cover;
+}
+#portfolioCarousel .btn-outline-primary {
+  transition: all 0.3s ease;
+}
+
+#portfolioCarousel .btn-outline-primary:hover {
+  background-color: #0d6efd;
+  color: #fff;
+  transform: scale(1.05);
+}
+.carousel-img {
+  height: 400px;         /* Fixed height */
+  object-fit: cover;     /* Crop image nicely */
+  border-radius: 8px;    /* Optional rounded corners */
+}
+.carousel-inner {
+  min-height: 400px;  /* Matches image height */
+}
